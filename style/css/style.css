@@ -167,7 +167,7 @@
     border-radius: 50%;
     top: 20px; left:-45px;
     position: absolute;
-    z-index: 1;
+    z-index: 3;
   }
   .lutin_body
   {
@@ -175,6 +175,19 @@
     width: 20px; height: 20px;
     top: 45px; left:-40px;
     position: absolute;
+  }
+  .lutz2 .lutin_body
+  {
+    background-color: transparent;
+    width: 0px;
+    height: 0px;
+    top: 33px;
+    left: -47px;
+    position: absolute;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 38px solid #e23f3f;
+    z-index: 2;
   }
   .lutin_jb1
   {
@@ -215,8 +228,24 @@
     border-left: 18px solid transparent;
     border-right: 18px solid transparent;
     border-bottom: 36px solid #637a15;
-    position: absolute; z-index: 2;
+    position: absolute; z-index: 4;
   }
+  .lutz2 .lutin_top
+  {
+    border-bottom-color: #d36060;
+  }
+
+  .lutz2 .lutin_arm1,
+  .lutz2 .lutin_arm2
+  {
+    background-color: #d36060;
+  }
+  .lutz2 .lutin_jb1,
+  .lutz2 .lutin_jb2
+  {
+    background-color: #f7d496;
+  }
+
   .lutin_pom
   {
     background-color: #ffffff;
@@ -224,11 +253,25 @@
     border-radius: 50%;
     top: -10px; left:-35px;
     position: absolute;
-    z-index: 3;
+    z-index: 5;
   }
+  
   .lutz
   {
     position: relative;
+    -webkit-animation: lutz 0.4s linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: lutz 0.4s linear;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation: lutz 0.4s linear;
+    -ms-animation-iteration-count: infinite;
+    animation: lutz 0.4s linear;
+    animation-iteration-count: infinite;
+  }
+  .lutz2
+  {
+    position: relative;
+    left: -60px;
     -webkit-animation: lutz 0.4s linear;
     -webkit-animation-iteration-count: infinite;
     -moz-animation: lutz 0.4s linear;
@@ -392,3 +435,4 @@
     75% {transform: translateX(300px);}
     100% {transform: translateX(0);}
   }
+  
